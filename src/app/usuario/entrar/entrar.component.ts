@@ -26,10 +26,6 @@ export class EntrarComponent implements OnInit {
     })
   }
 
-  // enviar(){
-  //   console.log(this.loginForm.value)
-  // this.onNuevoCliente.emit(this.loginForm.value)
-  // }
   
   entrar(){
     console.log(this.loginForm.value)
@@ -42,13 +38,5 @@ export class EntrarComponent implements OnInit {
         alert(data.mensaje)
       }
     })
-    // this.clienteService.entrar(this.loginForm.value).subscribe((data:any) =>{
-    //   console.log(data);
-    //   if(data.mensaje=="Accedió correctamente"){
-    //    this.router.navigateByUrl('inicio')
-    //   }else{
-    //     alert(data.mensaje)
-    //   }
-    // })
   }
 }
